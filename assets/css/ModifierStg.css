@@ -1,0 +1,115 @@
+.popup {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #fefefe;
+  padding: 20px 30px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  
+}
+.popup form {
+  width: -webkit-fill-available;
+
+}
+
+.popupContent {
+  display: flex;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modifier {
+  display: flex;
+  padding-bottom: 0px;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  padding: 0px 0px 10px 0px;
+}
+
+.inputContainer {
+  width: -webkit-fill-available;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: flex-end;
+
+}
+
+.buttonCont {
+  display: flex;
+  width: -webkit-fill-available;
+  height: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 11px;
+  padding: 5px 0px;
+}
+
+.button {
+  display: flex;
+  width: fit-content;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+  border-radius: 20px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 150ms;
+}
+
+.absenceContainer {
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.absenceContainer span {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  height: 30px;
+  background-color: #eee;
+  border-radius: 10px;
+  border-style: none;
+  padding: 0px 10px;
+}
+.absenceContainer label {
+  width: 100%;
+}
+.absenceContainer label span ,.absenceContainer label input {
+  cursor: pointer;
+}
+.confirm {
+  background: var(--selected, #0059A1);
+}
+
+.cancel {
+  background: #E53F1F;
+}

@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #f90a39;
+    --text-color: #1d1d1d;
+    --bg-color: #f1f1fb;
+}
+
+
+.search-results {
+    max-height: 300px;
+    overflow-y: auto;
+    position: absolute;
+    width: 350px;
+    top: 55px;
+    /* left: 295px; */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 999;
+}
+
+.search-results a {
+    display: block;
+    margin: 2px 5px;
+    padding: 8px 5px;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #1d1d1d;
+}
+
+.search-results a:hover {
+    background-color: #0047810d;
+    color: #1d1d1d;
+}
+
+.search-results hr {
+    margin: 0px;
+    opacity: 5%;
+}
+
+.search-results p {
+    display: block;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #df1d1d;
+}
+
+.input-groupC {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+
+    max-width: 350px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media (max-width: 425px){
+    #SignOut{
+        width: 50px;
+        text-align: start;
+        
+    }   
+}
+@media (min-width: 425px) {
+    .input-groupC {
+        width: 150px;
+        margin-right: 5px;
+        max-width: none; 
+    }
+    .search-results {
+        width: 150px;
+        max-width: none; 
+        top: 56px;
+    }
+
+}
+@media (min-width: 576px) {
+    .input-groupC {
+        width: 200px;
+        max-width: none; 
+    }
+    .search-results {
+        width: 200px;
+        max-width: none; 
+        top: 56px;
+    }
+}
+
+@media (min-width: 768px) {
+    .input-groupC {
+        width: 300px;
+        max-width: none; 
+    }
+    .search-results {
+        width: 300px;
+        max-width: none; 
+        top: 56px;
+    }
+}
+
+@media (min-width: 992px) {
+    .input-groupC {
+        width: 400px;
+        max-width: none; 
+    }
+    .search-results {
+        width: 400px;
+        max-width: none; 
+        top: 56px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .input-groupC {
+        width: 450px;
+        max-width: none; 
+    }
+    .search-results {
+        width: 450px;
+        max-width: none; 
+        top: 56px;
+    }
+}

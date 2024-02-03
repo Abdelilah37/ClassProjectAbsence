@@ -1,0 +1,56 @@
+@charset "UTF-8";@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap");
+*{
+  font-family: 'Plus Jakarta Sans';
+}
+.overlay-add-stagiaire {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  .overlay-add-stagiaire-content {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+  .overlay-add-stagiaire label, .overlay-add-stagiaire input, .overlay-add-stagiaire button {
+    width: 200px;
+    border: 0;
+    margin: 10px;
+  }
+
+  .overlay-add-stagiaire label {
+    font-weight: 500;
+  }
+
+  .overlay-add-stagiaire input {
+    background-color: rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+  }
+
+  .overlay-add-stagiaire button {
+    border-radius: 50px;
+    width: 80px;
+    height: 40px;
+  }
+
+  .overlay-add-stagiaire .button-confirm {
+    border-radius: 20px;
+    background: var(--selected, #0059A1);
+    color: #E53F1F;
+  }
+  
+  .overlay-add-stagiaire .button-cancel {
+    border-radius: 20px;
+    background: #E53F1F;
+  }

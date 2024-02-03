@@ -1,14 +1,15 @@
 ---
-name: Bug report
+name: add a button that submits the absence hours of all students in list stagiaires
 about: Create a report to help us improve
-title: ''
+title: 'adding Button submit'
 labels: ''
-assignees: ''
+assignees: ''`
 
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+add submit button in the end of page listStagiaires 
+let us submit the hours of students they have nbhours filled 
 
 **To Reproduce**
 Steps to reproduce the behavior:

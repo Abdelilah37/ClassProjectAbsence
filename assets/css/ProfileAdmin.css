@@ -1,0 +1,23 @@
+.username{
+    color:#00154f;
+    font-size: small;
+    font-weight: bolder;
+}
+.btn-primaryx {
+    background-color :#0059A1;
+    color: white;
+}
+.btn-primaryx:hover {
+    background-color :#0059A1;
+    color: white;
+    transform:scale(1.05);
+    transition: ease-in-out 150ms;
+}
+#btn-Profile:hover {
+    transform:scale(1.05);
+    transition: ease-in-out 150ms;
+}
+.btn-hover:hover{
+    transform:scale(1.05);
+    transition: ease-in-out 150ms;
+}

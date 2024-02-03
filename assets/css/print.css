@@ -1,0 +1,139 @@
+/* Imprimer button style */
+.ImprimerBtn {
+  position: fixed;
+  bottom: 40px;
+  /* Adjust the bottom position as needed */
+  right: 40px;
+  /* Adjust the right position as needed */
+  z-index: 5;
+  /* Adjust the z-index as needed */
+  background-color: #001C33;
+  padding: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  border: 2px solid #004b88;
+  box-shadow: rgba(50, 50, 93, 0.685) 2px 2px 10px -1px,
+    rgba(0, 0, 0, 0.747) 0px 1px 3px -1px;
+  transition: 0.4s;
+}
+
+.ImprimerBtn:hover {
+  transition: 0.4s;
+  border: 2px solid #001C33;
+  background-color: #004b88;
+  color: #ffffff;
+  transform: scale(1.05);
+  transition: ease-in-out 150ms;
+}
+
+.ImprimerBtn:active {
+  background-color: #001C33;
+}
+
+.tooltip {
+  position: fixed;
+  bottom: 12px;
+  /* Adjust the bottom position as needed */
+  right: 65px;
+  /* Adjust the right position as needed */
+  z-index: 5;
+  /* Adjust the z-index as needed */
+  opacity: 0;
+  background-color: rgb(12, 12, 12);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: .2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+}
+
+.tooltip::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: rgb(12, 12, 12);
+  background-size: 1000%;
+  background-position: center;
+  transform: rotate(45deg);
+  left: 93%;
+  transition-duration: .3s;
+}
+
+.ImprimerBtn:hover .tooltip {
+  opacity: 1;
+  transition-duration: .3s;
+}
+/* Reset margins and padding for printing */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    margin: 10px;
+  }
+}
+
+/* Styles for hiding elements not needed in print */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .printablediv,
+  .printablediv * {
+    visibility: visible;
+  }
+
+  .do-not-print {
+    display: none !important;
+  }
+}
+
+/* Avoid page breaks inside and before table rows */
+@media print {
+  tr {
+    page-break-inside: avoid;
+    page-break-before: auto;
+  }
+}
+
+/* Optional: Adjust styles for better printing */
+@media print {
+  h2 {
+    width: fit-content;
+    margin-top: -50px;
+    color: red !important;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    page-break-inside: auto;
+  }
+
+  th,
+  td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    page-break-inside: avoid;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  /* Ensure the table header is repeated on each page */
+  thead {
+    display: table-header-group;
+  }
+}
